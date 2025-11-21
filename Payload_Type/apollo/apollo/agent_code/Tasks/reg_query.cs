@@ -6,10 +6,10 @@
 
 #if REG_QUERY
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Utils;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
+using Interop.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -43,7 +43,7 @@ namespace Tasks
             [DataMember(Name = "result_type")]
             public string ResultType;
         }
-        public reg_query(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public reg_query(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
 

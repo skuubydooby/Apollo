@@ -8,16 +8,16 @@
 using System;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using Interop.Serializers;
 using System.Threading;
 using System.Collections.Concurrent;
 using System.IO.Pipes;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Classes.Collections;
+using Interop.Structs.ApolloStructs;
+using Interop.Classes.Collections;
 
 namespace Tasks
 {

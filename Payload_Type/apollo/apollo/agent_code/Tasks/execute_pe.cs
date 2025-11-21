@@ -8,21 +8,21 @@
 
 using System;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using ApolloInterop.Serializers;
+using Interop.Serializers;
 using System.Threading;
 using System.Collections.Concurrent;
 using System.IO.Pipes;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Utils;
+using Interop.Structs.ApolloStructs;
+using Interop.Classes.Core;
+using Interop.Utils;
 using System.Threading.Tasks;
-using ApolloInterop.Classes.Events;
+using Interop.Classes.Events;
 using System.ComponentModel;
-using ApolloInterop.Classes.Collections;
+using Interop.Classes.Collections;
 using System.Linq;
 
 namespace Tasks

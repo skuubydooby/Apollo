@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Types.Delegates;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
+using Interop.Types.Delegates;
 using System.Net;
-using ApolloInterop.Enums.ApolloEnums;
+using Interop.Enums.ApolloEnums;
 using System.Collections.Concurrent;
 using ST = System.Threading.Tasks;
 using System.Threading;
-using ApolloInterop.Serializers;
+using Interop.Serializers;
 using WebsocketTransport.Models;
 using WebSocketSharp;
 

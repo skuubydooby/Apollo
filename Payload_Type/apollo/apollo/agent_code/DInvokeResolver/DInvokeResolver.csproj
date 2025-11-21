@@ -7,7 +7,7 @@
     <Platforms>AnyCPU;x64;x86</Platforms>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApolloInterop\ApolloInterop.csproj" />
+    <ProjectReference Include="..\Interop\Interop.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="PolySharp" Version="1.14.1" />

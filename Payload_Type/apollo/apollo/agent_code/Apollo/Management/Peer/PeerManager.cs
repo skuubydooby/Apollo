@@ -2,10 +2,10 @@
 using Apollo.Peers.SMB;
 using Apollo.Peers.TCP;
 using Apollo.Peers.Webshell;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Utils;
-using AI = ApolloInterop;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
+using Interop.Utils;
+using AI = Interop;
 namespace Apollo.Management.Peer
 {
     public class PeerManager : AI.Classes.P2P.PeerManager

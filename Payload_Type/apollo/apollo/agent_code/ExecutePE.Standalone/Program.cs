@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Remoting.Messaging;
 using System.Threading;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Structs.ApolloStructs;
 using static ExecutePE.PERunner;
 
 namespace ExecutePE.Standalone;

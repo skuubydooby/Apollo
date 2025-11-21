@@ -6,15 +6,15 @@
 
 #if WHOAMI
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 
 namespace Tasks
 {
     public class whoami : Tasking
     {
-        public whoami(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public whoami(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
 

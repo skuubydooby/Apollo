@@ -9,10 +9,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Utils;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
+using Interop.Utils;
 
 namespace Tasks;
 

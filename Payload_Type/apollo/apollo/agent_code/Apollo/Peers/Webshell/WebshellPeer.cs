@@ -1,21 +1,21 @@
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+﻿using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.IO.Pipes;
 using System.Linq;
 using System.Text;
-using AI = ApolloInterop;
-using AS = ApolloInterop.Structs.ApolloStructs;
+using AI = Interop;
+using AS = Interop.Structs.ApolloStructs;
 using TTasks = System.Threading.Tasks;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Classes.Core;
+using Interop.Structs.ApolloStructs;
 using Tasks;
-using ApolloInterop.Utils;
+using Interop.Utils;
 using System.Net;
 using System.IO;
 using System.Security.Policy;
-using ApolloInterop.Types.Delegates;
+using Interop.Types.Delegates;
 
 namespace Apollo.Peers.Webshell
 {

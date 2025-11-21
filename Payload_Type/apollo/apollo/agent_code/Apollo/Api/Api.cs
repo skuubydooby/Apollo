@@ -1,10 +1,10 @@
-﻿using ApolloInterop.Interfaces;
+﻿using Interop.Interfaces;
 using System;
-using ApolloInterop.Classes;
+using Interop.Classes;
 using PlaintextCryptography;
 using PSKCryptography;
-using ApolloInterop.Serializers;
-using ApolloInterop.Classes.Api;
+using Interop.Serializers;
+using Interop.Classes.Api;
 using SimpleResolver;
 namespace Apollo.Api
 {

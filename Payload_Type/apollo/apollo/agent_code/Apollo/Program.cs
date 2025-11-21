@@ -1,19 +1,19 @@
 ﻿using System;
-using ApolloInterop.Serializers;
+using Interop.Serializers;
 using System.Collections.Generic;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
+using Interop.Classes;
+using Interop.Interfaces;
 using System.IO.Pipes;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Structs.ApolloStructs;
 using System.Text;
 using System.Threading;
 using System.Linq;
 using System.Collections.Concurrent;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Enums.ApolloEnums;
+using Interop.Classes.Core;
+using Interop.Classes.Events;
+using Interop.Enums.ApolloEnums;
 using System.Runtime.InteropServices;
-using ApolloInterop.Utils;
+using Interop.Utils;
 
 namespace Apollo
 {

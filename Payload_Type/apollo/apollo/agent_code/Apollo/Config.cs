@@ -16,9 +16,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Structs.ApolloStructs;
 using PSKCryptography;
-using ApolloInterop.Serializers;
+using Interop.Serializers;
 #if WEBSOCKET
 using WebsocketTransport;
 #endif

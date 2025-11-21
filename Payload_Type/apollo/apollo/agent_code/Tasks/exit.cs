@@ -5,9 +5,9 @@
 #endif
 
 #if EXIT
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 
 namespace Tasks
 {

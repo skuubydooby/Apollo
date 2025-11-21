@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using AM = Apollo.Management;
 using System.Net;
 using System.Net.Sockets;
@@ -12,7 +12,7 @@ using System.IO;
 
 namespace Apollo.Agent
 {
-    public class Apollo : ApolloInterop.Classes.Agent
+    public class Apollo : Interop.Classes.Agent
     {
 
         public Apollo(string uuid) : base(uuid)

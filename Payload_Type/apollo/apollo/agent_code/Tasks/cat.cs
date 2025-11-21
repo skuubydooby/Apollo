@@ -6,12 +6,12 @@
 
 #if CAT
 using System;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
 using System.Threading;
-using ApolloInterop.Classes.Collections;
+using Interop.Classes.Collections;
 using System.IO;
 using TT = System.Threading.Tasks;
 namespace Tasks

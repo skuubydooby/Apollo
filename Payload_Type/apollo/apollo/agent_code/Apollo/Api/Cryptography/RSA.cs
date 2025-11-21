@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Security.Cryptography;
-using ApolloInterop.Classes;
+using Interop.Classes;
 
 namespace Apollo.Api.Cryptography
 {

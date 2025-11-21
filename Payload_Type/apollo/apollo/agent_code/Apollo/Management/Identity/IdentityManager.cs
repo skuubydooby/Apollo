@@ -1,14 +1,14 @@
-﻿using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
+﻿using Interop.Interfaces;
+using Interop.Structs.ApolloStructs;
 using System;
 using System.Security.Principal;
-using ApolloInterop.Classes.Api;
-using static ApolloInterop.Enums.Win32;
-using static ApolloInterop.Constants.Win32;
+using Interop.Classes.Api;
+using static Interop.Enums.Win32;
+using static Interop.Constants.Win32;
 using System.Runtime.InteropServices;
-using static ApolloInterop.Structs.Win32;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Utils;
+using static Interop.Structs.Win32;
+using Interop.Structs.MythicStructs;
+using Interop.Utils;
 
 namespace Apollo.Management.Identity;
 

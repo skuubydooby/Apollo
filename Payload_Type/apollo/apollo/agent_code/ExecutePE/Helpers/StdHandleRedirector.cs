@@ -1,11 +1,11 @@
-#define NAMED_PIPE
+﻿#define NAMED_PIPE
 using System;
 using System.IO.Pipes;
 using System.IO;
 using static ExecutePE.Internals.NativeDeclarations;
 using System.Threading.Tasks;
 using System.Threading;
-using ApolloInterop.Classes.Events;
+using Interop.Classes.Events;
 
 namespace ExecutePE.Helpers
 {

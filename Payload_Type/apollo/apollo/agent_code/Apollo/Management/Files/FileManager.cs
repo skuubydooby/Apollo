@@ -1,13 +1,13 @@
-﻿using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+﻿using Interop.Classes.Core;
+using Interop.Classes.Events;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using ApolloInterop.Classes.Cryptography;
+using Interop.Classes.Cryptography;
 using Newtonsoft.Json.Serialization;
 
 namespace Apollo.Management.Files

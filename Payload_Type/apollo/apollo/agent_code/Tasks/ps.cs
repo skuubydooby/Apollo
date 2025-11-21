@@ -7,18 +7,18 @@
 #if PS
 
 using System;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Threading;
 using TT = System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Management;
-using static ApolloInterop.Enums.Win32;
+using static Interop.Enums.Win32;
 using System.Security.Principal;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Collections;
-using ApolloInterop.Utils;
+using Interop.Classes.Api;
+using Interop.Classes.Collections;
+using Interop.Utils;
 using System.Net.Http;
 
 namespace Tasks

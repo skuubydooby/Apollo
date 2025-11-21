@@ -1,4 +1,4 @@
-﻿using ApolloInterop.Interfaces;
+﻿using Interop.Interfaces;
 using System.Collections.Concurrent;
 using System.Text;
 

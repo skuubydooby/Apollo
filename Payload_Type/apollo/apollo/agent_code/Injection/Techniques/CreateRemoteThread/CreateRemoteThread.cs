@@ -1,6 +1,6 @@
-﻿using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Interfaces;
+﻿using Interop.Classes.Api;
+using Interop.Classes.Core;
+using Interop.Interfaces;
 using System;
 using static Injection.Shared.Win32;
 

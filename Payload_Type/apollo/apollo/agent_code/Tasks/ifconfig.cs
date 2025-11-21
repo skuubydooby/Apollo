@@ -1,4 +1,4 @@
-#define COMMAND_NAME_UPPER
+﻿#define COMMAND_NAME_UPPER
 
 #if DEBUG
 #define IFCONFIG
@@ -6,9 +6,9 @@
 
 #if IFCONFIG
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Net;

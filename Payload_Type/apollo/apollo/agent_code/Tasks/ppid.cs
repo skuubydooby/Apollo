@@ -6,9 +6,9 @@
 
 #if PPID
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;

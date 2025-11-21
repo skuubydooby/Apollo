@@ -1,4 +1,4 @@
-#define COMMAND_NAME_UPPER
+﻿#define COMMAND_NAME_UPPER
 
 #if DEBUG
 #define LISTPIPES
@@ -10,9 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 
 namespace Tasks
 {

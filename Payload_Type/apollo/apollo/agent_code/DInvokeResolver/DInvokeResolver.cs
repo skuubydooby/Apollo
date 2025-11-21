@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Interfaces;
+using Interop.Classes.Api;
+using Interop.Interfaces;
 
 namespace DInvokeResolver
 {

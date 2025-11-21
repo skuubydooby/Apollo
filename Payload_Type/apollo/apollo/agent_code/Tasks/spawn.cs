@@ -6,9 +6,9 @@
 
 #if SPAWN
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
 
 namespace Tasks
@@ -21,7 +21,7 @@ namespace Tasks
             [DataMember(Name = "template")]
             public string Template;
         }
-        public spawn(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public spawn(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
 

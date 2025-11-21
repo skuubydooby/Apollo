@@ -1,4 +1,4 @@
-﻿using ApolloInterop.Interfaces;
+﻿using Interop.Interfaces;
 
 namespace KeylogInject
 {

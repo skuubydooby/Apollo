@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Classes;
+using Interop.Interfaces;
+using Interop.Classes;
 using System.IO.Pipes;
-using ApolloInterop.Structs.MythicStructs;
-using ApolloInterop.Types.Delegates;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Structs.MythicStructs;
+using Interop.Types.Delegates;
+using Interop.Structs.ApolloStructs;
 using System.Collections.Concurrent;
-using ApolloInterop.Enums.ApolloEnums;
+using Interop.Enums.ApolloEnums;
 using System.Threading;
 using ST = System.Threading.Tasks;
-using ApolloInterop.Serializers;
-using ApolloInterop.Constants;
-using ApolloInterop.Classes.Core;
-using ApolloInterop.Classes.Events;
-using ApolloInterop.Utils;
+using Interop.Serializers;
+using Interop.Constants;
+using Interop.Classes.Core;
+using Interop.Classes.Events;
+using Interop.Utils;
 
 namespace NamedPipeTransport
 {
@@ -394,7 +394,7 @@ namespace NamedPipeTransport
 
         public bool Send<IMythicMessage>(IMythicMessage message)
         {
-            return AddToSenderQueue((ApolloInterop.Interfaces.IMythicMessage)message);
+            return AddToSenderQueue((Interop.Interfaces.IMythicMessage)message);
         }
 
         public bool SendRecv<T, TResult>(T message, OnResponse<TResult> onResponse)

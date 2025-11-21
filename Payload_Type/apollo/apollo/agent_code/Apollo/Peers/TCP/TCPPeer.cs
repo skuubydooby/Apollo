@@ -1,18 +1,18 @@
-﻿using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+﻿using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Linq;
 using System.Text;
-using AI = ApolloInterop;
-using AS = ApolloInterop.Structs.ApolloStructs;
+using AI = Interop;
+using AS = Interop.Structs.ApolloStructs;
 using TTasks = System.Threading.Tasks;
 using System.Net.Sockets;
-using ApolloInterop.Classes.Api;
-using ApolloInterop.Classes.Core;
+using Interop.Classes.Api;
+using Interop.Classes.Core;
 using System.Xml.Linq;
-using ApolloInterop.Utils;
-using ApolloInterop.Structs.ApolloStructs;
+using Interop.Utils;
+using Interop.Structs.ApolloStructs;
 using System.Net;
 
 namespace Apollo.Peers.TCP

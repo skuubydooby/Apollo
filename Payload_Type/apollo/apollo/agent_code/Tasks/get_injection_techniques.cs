@@ -6,9 +6,9 @@
 
 #if GET_INJECTION_TECHNIQUES
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -25,7 +25,7 @@ namespace Tasks
             [DataMember(Name = "is_current")]
             public bool IsCurrent;
         }
-        public get_injection_techniques(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public get_injection_techniques(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
         

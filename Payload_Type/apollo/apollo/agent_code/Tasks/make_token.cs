@@ -6,10 +6,10 @@
 
 #if MAKE_TOKEN
 
-using ApolloInterop.Classes;
-using ApolloInterop.Interfaces;
-using ApolloInterop.Structs.ApolloStructs;
-using ApolloInterop.Structs.MythicStructs;
+using Interop.Classes;
+using Interop.Interfaces;
+using Interop.Structs.ApolloStructs;
+using Interop.Structs.MythicStructs;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 
@@ -25,7 +25,7 @@ namespace Tasks
             [DataMember(Name = "netOnly")]
             public bool NetOnly;
         }
-        public make_token(IAgent agent, ApolloInterop.Structs.MythicStructs.MythicTask data) : base(agent, data)
+        public make_token(IAgent agent, Interop.Structs.MythicStructs.MythicTask data) : base(agent, data)
         {
         }
         public override void Start()
