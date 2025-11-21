@@ -30,14 +30,14 @@ WORKDIR /Mythic/
 # Copy project files
 COPY [".", "."]
 
-# Download System.Management.Automation DLL - use v7.4.6 which exists
+# Download System.Management.Automation DLL - NOTE THE PATH CHANGE
 RUN mkdir -p /Mythic/Jelly/agent_code/packages/System.Management.Automation6.1.7 && \
     wget -O /tmp/psautomation.zip https://www.nuget.org/api/v2/package/System.Management.Automation/7.4.6 && \
     unzip -q /tmp/psautomation.zip -d /tmp/psautomation && \
-    cp /tmp/psautomation/lib/net6.0/System.Management.Automation.dll /Mythic/Jelly/agent_code/packages/System.Management.Automation6.1.7/ && \
+    find /tmp/psautomation -name "System.Management.Automation.dll" -exec cp {} /Mythic/Jelly/agent_code/packages/System.Management.Automation6.1.7/ \; && \
     rm -rf /tmp/psautomation /tmp/psautomation.zip
 
-# Restore .NET dependencies and setup donut
+# Restore .NET dependencies - NOTE THE PATH CHANGE  
 RUN cd Jelly/agent_code && \
     dotnet restore && \
     rm -f donut && \
@@ -46,5 +46,5 @@ RUN cd Jelly/agent_code && \
 # Copy COFFLoader.dll to root
 RUN cd Jelly/agent_code && cp COFFLoader.dll /COFFLoader.dll
 
-# Runtime command
+# Runtime command - NOTE THE PATH CHANGE
 CMD ["bash", "-c", "cp /donut Jelly/agent_code/donut && /venv/bin/python main.py"]
