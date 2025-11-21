@@ -1,7 +1,7 @@
 ﻿using Interop.Classes.Api;
 using Interop.Classes.Events;
 using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System;
 
 namespace Interop.Classes.Core

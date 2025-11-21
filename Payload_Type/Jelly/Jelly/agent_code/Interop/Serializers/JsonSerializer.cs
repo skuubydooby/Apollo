@@ -4,7 +4,7 @@ using System.Text;
 using Interop.Interfaces;
 using System.IO;
 using System.Runtime.Serialization.Json;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Types;
 using Interop.Enums.ApolloEnums;
 
@@ -18,7 +18,7 @@ namespace Interop.Serializers
             //Assembly interopAsm = Assembly.GetAssembly(typeof(TaskResponse));
             //foreach(Type t in interopAsm.GetTypes())
             //{
-            //    if (t.FullName.StartsWith("Interop.Structs.MythicStructs") || t.FullName.StartsWith("Interop.Structs.ApolloStructs"))
+            //    if (t.FullName.StartsWith("Interop.Structs.MythicStructs") || t.FullName.StartsWith("Interop.Structs.Structs"))
             //    {
             //        _knownTypes.Add(t);
             //    }

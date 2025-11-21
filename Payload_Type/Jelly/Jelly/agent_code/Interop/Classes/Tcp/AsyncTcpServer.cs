@@ -1,4 +1,4 @@
-﻿using Interop.Structs.ApolloStructs;
+﻿using Interop.Structs.Structs;
 using Interop.Utils;
 using System;
 using System.Collections.Concurrent;

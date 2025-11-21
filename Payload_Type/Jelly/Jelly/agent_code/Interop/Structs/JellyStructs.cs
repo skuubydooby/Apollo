@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Runtime.Serialization;
 using System.Security;
 
-namespace Interop.Structs.ApolloStructs
+namespace Interop.Structs.Structs
 {
 
     [DataContract]

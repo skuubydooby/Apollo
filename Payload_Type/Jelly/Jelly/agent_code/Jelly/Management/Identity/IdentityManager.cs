@@ -1,5 +1,5 @@
 ﻿using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System;
 using System.Security.Principal;
 using Interop.Classes.Api;

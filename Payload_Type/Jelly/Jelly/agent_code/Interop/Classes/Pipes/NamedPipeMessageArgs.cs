@@ -1,4 +1,4 @@
-﻿using Interop.Structs.ApolloStructs;
+﻿using Interop.Structs.Structs;
 using System;
 using System.IO.Pipes;
 

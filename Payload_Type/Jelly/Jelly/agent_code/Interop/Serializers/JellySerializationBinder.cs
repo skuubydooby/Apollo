@@ -1,4 +1,4 @@
-﻿using Interop.Structs.ApolloStructs;
+﻿using Interop.Structs.Structs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace Interop.Serializers
     {
         public override Type BindToType(string assemblyName, string typeName)
         {
-            if (typeName == "Interop.Structs.ApolloStructs.PeerMessage")
+            if (typeName == "Interop.Structs.Structs.PeerMessage")
             {
                 return typeof(PeerMessage);
             }

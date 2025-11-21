@@ -13,7 +13,7 @@ using Interop.Classes.Events;
 using Interop.Enums.ApolloEnums;
 using Interop.Interfaces;
 using Interop.Serializers;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Structs.MythicStructs;
 using System;
 using System.Collections.Concurrent;

@@ -5,14 +5,14 @@ using System;
 using System.Linq;
 using System.Text;
 using AI = Interop;
-using AS = Interop.Structs.ApolloStructs;
+using AS = Interop.Structs.Structs;
 using TTasks = System.Threading.Tasks;
 using System.Net.Sockets;
 using Interop.Classes.Api;
 using Interop.Classes.Core;
 using System.Xml.Linq;
 using Interop.Utils;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System.Net;
 
 namespace Jelly.Peers.TCP

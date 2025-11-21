@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Interop.Classes;
 using Interop.Interfaces;
 using System.IO.Pipes;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System.Text;
 using System.Threading;
 using System.Linq;

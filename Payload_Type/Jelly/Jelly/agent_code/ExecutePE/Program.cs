@@ -8,7 +8,7 @@ using System.Collections.Concurrent;
 using Interop.Interfaces;
 using Interop.Classes;
 using Interop.Classes.Core;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Classes.Events;
 using Interop.Enums.ApolloEnums;
 using Interop.Constants;

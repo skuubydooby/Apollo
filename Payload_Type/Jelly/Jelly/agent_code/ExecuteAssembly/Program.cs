@@ -6,7 +6,7 @@ using Interop.Constants;
 using Interop.Enums.ApolloEnums;
 using Interop.Interfaces;
 using Interop.Serializers;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

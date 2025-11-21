@@ -7,7 +7,7 @@ using System.Collections.Concurrent;
 using Interop.Classes;
 using System.Threading;
 using Interop.Classes.Core;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Interfaces;
 using ST = System.Threading.Tasks;
 using Interop.Enums.ApolloEnums;

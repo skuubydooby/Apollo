@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 using Interop.Classes.Collections;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Serializers;
 using ST=System.Threading.Tasks;
 using System.Threading;

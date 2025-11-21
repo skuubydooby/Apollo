@@ -33,7 +33,7 @@ namespace Tasks
             }
 
             MythicTaskResponse resp = CreateTaskResponse("", true, "completed");
-            resp.ProcessResponse = new Interop.Structs.ApolloStructs.ProcessResponse
+            resp.ProcessResponse = new Interop.Structs.Structs.ProcessResponse
             {
                 Jobs = realJids.ToArray()
             };

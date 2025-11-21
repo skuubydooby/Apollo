@@ -7,7 +7,7 @@ using Interop.Classes;
 using System.IO.Pipes;
 using Interop.Structs.MythicStructs;
 using Interop.Types.Delegates;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System.Collections.Concurrent;
 using Interop.Enums.ApolloEnums;
 using System.Threading;

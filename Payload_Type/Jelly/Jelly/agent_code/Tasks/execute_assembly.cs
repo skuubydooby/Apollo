@@ -17,7 +17,7 @@ using Interop.Serializers;
 using System.Threading;
 using System.Collections.Concurrent;
 using System.IO.Pipes;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Classes.Core;
 using Interop.Classes.Collections;
 using Interop.Utils;

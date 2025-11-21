@@ -1,5 +1,5 @@
 ﻿using Interop.Enums.ApolloEnums;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Structs.MythicStructs;
 using System;
 

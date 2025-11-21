@@ -1,5 +1,5 @@
 ﻿using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 
 namespace Process
 {

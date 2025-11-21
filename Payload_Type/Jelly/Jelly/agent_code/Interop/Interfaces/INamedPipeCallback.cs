@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO.Pipes;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 
 namespace Interop.Interfaces
 {

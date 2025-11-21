@@ -6,7 +6,7 @@ using Interop.Interfaces;
 using Interop.Enums.ApolloEnums;
 using System.Net;
 using System.IO;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using System.Reflection;
 
 namespace Interop.Structs

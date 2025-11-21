@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using Interop.Enums.ApolloEnums;
 using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Types;
 
 namespace Interop.Serializers

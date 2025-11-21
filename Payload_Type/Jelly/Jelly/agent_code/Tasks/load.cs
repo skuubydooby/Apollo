@@ -10,7 +10,7 @@ using Interop.Classes;
 using Interop.Interfaces;
 using Interop.Structs.MythicStructs;
 using System.Runtime.Serialization;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using ST = System.Threading.Tasks;
 namespace Tasks
 {

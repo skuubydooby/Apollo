@@ -1,5 +1,5 @@
 ﻿using Interop.Classes.Core;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 
 namespace Interop.Interfaces
 {

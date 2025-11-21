@@ -16,7 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using PSKCryptography;
 using Interop.Serializers;
 #if WEBSOCKET

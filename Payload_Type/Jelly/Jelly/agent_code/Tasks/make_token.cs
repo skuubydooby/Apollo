@@ -8,7 +8,7 @@
 
 using Interop.Classes;
 using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Structs.MythicStructs;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;

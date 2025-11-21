@@ -3,7 +3,7 @@
 using Interop.Classes.Api;
 using Interop.Classes.Events;
 using Interop.Interfaces;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;

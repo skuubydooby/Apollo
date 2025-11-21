@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Interop.Interfaces;
 using System.Collections.Concurrent;
-using Interop.Structs.ApolloStructs;
+using Interop.Structs.Structs;
 using Interop.Classes.Core;
 
 namespace Interop.Classes
