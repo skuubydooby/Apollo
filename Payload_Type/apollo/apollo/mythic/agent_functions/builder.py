@@ -1,4 +1,4 @@
-import datetime
+﻿import datetime
 import time
 
 from mythic_container.PayloadBuilder import *
@@ -227,13 +227,13 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
                 targetScreenshotInjectPath = "/srv/ScreenshotInject.exe"
                 targetKeylogInjectPath = "/srv/KeylogInject.exe"
                 targetExecutePEPath = "/srv/ExecutePE.exe"
-                targetInteropPath = "/srv/ApolloInterop.dll"
+                targetInteropPath = "/srv/Interop.dll"
                 shutil.move(f"{agent_build_path.name}/{buildPath}/ExecuteAssembly.exe", targetExeAsmPath)
                 shutil.move(f"{agent_build_path.name}/{buildPath}/PowerShellHost.exe", targetPowerPickPath)
                 shutil.move(f"{agent_build_path.name}/{buildPath}/ScreenshotInject.exe", targetScreenshotInjectPath)
                 shutil.move(f"{agent_build_path.name}/{buildPath}/KeylogInject.exe", targetKeylogInjectPath)
                 shutil.move(f"{agent_build_path.name}/{buildPath}/ExecutePE.exe", targetExecutePEPath)
-                shutil.move(f"{agent_build_path.name}/{buildPath}/ApolloInterop.dll", targetInteropPath)
+                shutil.move(f"{agent_build_path.name}/{buildPath}/Interop.dll", targetInteropPath)
                 if self.get_parameter('output_type') == "Source":
                     shutil.make_archive(f"/tmp/{agent_build_path.name}/source", "zip", f"{agent_build_path.name}")
                     await SendMythicRPCPayloadUpdatebuildStep(MythicRPCPayloadUpdateBuildStepMessage(

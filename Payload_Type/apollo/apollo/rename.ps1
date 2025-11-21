@@ -34,7 +34,7 @@ $stats = @{
 
 # Step 1: Update content in ALL text-based files
 Write-Host "Step 1: Updating file contents recursively..." -ForegroundColor Cyan
-$textExtensions = @("*.cs", "*.csproj", "*.sln", "*.json", "*.xml", "*.config", "*.txt", "*.props", "*.targets", "*.resx", "*.xaml")
+$textExtensions = @("*.cs", "*.csproj", "*.sln", "*.json", "*.xml", "*.config", "*.txt", "*.props", "*.targets", "*.resx", "*.xaml", "*.py", "*.yml", "*.yaml", "*.sh", "*.md", "*.dockerfile", "*.bat", "*.ps1")
 $allFiles = @()
 
 foreach ($ext in $textExtensions) {

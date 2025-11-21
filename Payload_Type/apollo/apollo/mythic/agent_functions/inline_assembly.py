@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from uuid import uuid4
 from .execute_pe import PRINTSPOOFER_FILE_ID
@@ -12,9 +12,9 @@ import asyncio
 import platform
 
 if platform.system() == 'Windows':
-    INTEROP_ASSEMBLY_PATH = "C:\\Mythic\\Apollo\\srv\\ApolloInterop.dll"
+    INTEROP_ASSEMBLY_PATH = "C:\\Mythic\\Apollo\\srv\\Interop.dll"
 else:
-    INTEROP_ASSEMBLY_PATH = "/srv/ApolloInterop.dll"
+    INTEROP_ASSEMBLY_PATH = "/srv/Interop.dll"
 INTEROP_FILE_ID = ""
 
 
@@ -118,15 +118,15 @@ class InlineAssemblyCommand(CommandBase):
     async def build_interop(self):
         global INTEROP_ASSEMBLY_PATH
         agent_build_path = tempfile.TemporaryDirectory()
-        outputPath = "{}/ApolloInterop/bin/Release/ApolloInterop.dll".format(agent_build_path.name)
+        outputPath = "{}/Interop/bin/Release/Interop.dll".format(agent_build_path.name)
         copy_tree(str(self.agent_code_path), agent_build_path.name)
-        shell_cmd = "dotnet build -c release -p:DebugType=None -p:DebugSymbols=false -p:Platform=x64 {}/ApolloInterop/ApolloInterop.csproj -o {}/ApolloInterop/bin/Release/".format(
+        shell_cmd = "dotnet build -c release -p:DebugType=None -p:DebugSymbols=false -p:Platform=x64 {}/Interop/Interop.csproj -o {}/Interop/bin/Release/".format(
             agent_build_path.name, agent_build_path.name)
         proc = await asyncio.create_subprocess_shell(shell_cmd, stdout=asyncio.subprocess.PIPE,
                                                      stderr=asyncio.subprocess.PIPE, cwd=agent_build_path.name)
         stdout, stderr = await proc.communicate()
         if not path.exists(outputPath):
-            raise Exception("Failed to build ApolloInterop.dll:\n{}".format(stderr.decode() + "\n" + stdout.decode()))
+            raise Exception("Failed to build Interop.dll:\n{}".format(stderr.decode() + "\n" + stdout.decode()))
         shutil.copy(outputPath, INTEROP_ASSEMBLY_PATH)
 
     async def create_go_tasking(self, taskData: PTTaskMessageAllData) -> PTTaskCreateTaskingMessageResponse:
