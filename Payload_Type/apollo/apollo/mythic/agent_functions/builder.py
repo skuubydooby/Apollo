@@ -13,8 +13,8 @@ import pathlib
 from mythic_container.MythicRPC import *
 
 
-class Apollo(PayloadType):
-    name = "apollo"
+class Jelly(PayloadType):
+    name = "Jelly"
     file_extension = "exe"
     author = "@djhohnstein, @its_a_feature_"
     mythic_encrypts = True
@@ -93,9 +93,9 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
         )
     ]
     c2_profiles = ["http", "smb", "tcp", "websocket"]
-    agent_path = pathlib.Path(".") / "apollo" / "mythic"
-    agent_code_path = pathlib.Path(".") / "apollo" / "agent_code"
-    agent_icon_path = agent_path / "agent_functions" / "apollo.svg"
+    agent_path = pathlib.Path(".") / "Jelly" / "mythic"
+    agent_code_path = pathlib.Path(".") / "Jelly" / "agent_code"
+    agent_icon_path = agent_path / "agent_functions" / "Jelly.svg"
     build_steps = [
         BuildStep(step_name="Gathering Files", step_description="Copying files to temp location"),
         BuildStep(step_name="Compiling", step_description="Compiling with nuget and dotnet"),
@@ -117,7 +117,7 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
         defines_commands_upper = ["#define EXIT"]
         if self.get_parameter('debug'):
             possibleCommands = await SendMythicRPCCommandSearch(MythicRPCCommandSearchMessage(
-                SearchPayloadTypeName="apollo",
+                SearchPayloadTypeName="Jelly",
             ))
             if possibleCommands.Success:
                 resp.updated_command_list = [c.Name for c in possibleCommands.Commands]
@@ -132,7 +132,7 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
         extra_variables = {
 
         }
-        success_message = f"Apollo {self.uuid} Successfully Built"
+        success_message = f"Jelly {self.uuid} Successfully Built"
         stdout_err = ""
         defines_profiles_upper = []
         compileType = "debug" if self.get_parameter('debug') else "release"
@@ -151,7 +151,7 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
                 if isinstance(val, dict) and 'enc_key' in val:
                     if val["value"] == "none":
                         resp.set_status(BuildStatus.Error)
-                        resp.set_build_message("Apollo does not support plaintext encryption")
+                        resp.set_build_message("Jelly does not support plaintext encryption")
                         return resp
 
                     stdout_err += "Setting {} to {}".format(prefixed_key, val["enc_key"] if val["enc_key"] is not None else "")
@@ -194,7 +194,7 @@ NOTE: v2.3.2+ has a different bof loader than 2.3.1 and are incompatible since t
                                 templateFile = templateFile.replace("HTTP_ADDITIONAL_HEADERS_HERE", "")
                 with open(csFile, "wb") as f:
                     f.write(templateFile.encode())
-            output_path = f"{agent_build_path.name}/{buildPath}/Apollo.exe"
+            output_path = f"{agent_build_path.name}/{buildPath}/Jelly.exe"
             if self.get_parameter('debug'):
                 command = f"dotnet build -c {compileType} -p:Platform=\"Any CPU\" -o {agent_build_path.name}/{buildPath}/"
             else:

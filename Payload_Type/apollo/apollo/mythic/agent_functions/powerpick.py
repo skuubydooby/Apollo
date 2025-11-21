@@ -1,4 +1,4 @@
-from distutils.dir_util import copy_tree
+﻿from distutils.dir_util import copy_tree
 import shutil
 import tempfile
 from mythic_container.MythicCommandBase import *
@@ -11,7 +11,7 @@ import donut
 import platform 
 
 if platform.system() == 'Windows':  
-    POWERSHELL_HOST_PATH = "C:\\Mythic\\Apollo\\srv\\PowerShellHost.exe"
+    POWERSHELL_HOST_PATH = "C:\\Mythic\\Jelly\\srv\\PowerShellHost.exe"
 else:
     POWERSHELL_HOST_PATH="/srv/PowerShellHost.exe"
 

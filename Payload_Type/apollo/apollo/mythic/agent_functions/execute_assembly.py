@@ -1,4 +1,4 @@
-from distutils.dir_util import copy_tree
+﻿from distutils.dir_util import copy_tree
 import shutil
 import tempfile
 from mythic_container.MythicCommandBase import *
@@ -10,7 +10,7 @@ import donut
 import platform
 
 if platform.system() == "Windows":
-    EXEECUTE_ASSEMBLY_PATH = "C:\\Mythic\\Apollo\\srv\\ExecuteAssembly.exe"
+    EXEECUTE_ASSEMBLY_PATH = "C:\\Mythic\\Jelly\\srv\\ExecuteAssembly.exe"
 else:
     EXEECUTE_ASSEMBLY_PATH = "/srv/ExecuteAssembly.exe"
 

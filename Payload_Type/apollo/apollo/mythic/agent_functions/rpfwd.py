@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
 
@@ -69,7 +69,7 @@ class RpfwdArguments(TaskArguments):
                 type=ParameterType.ChooseOne,
                 choices=["None", "Connections", "Received Data", "Sent Data"],
                 default_value="Connections",
-                description="Report debug messages back to Mythic. 'Connections' is just data about new/closed connections, 'Received Data' is connections plus data sent to the local port Apollo is bound to, 'Sent Data' is the other two plus data that Apollo is sending back to the remote connection.",
+                description="Report debug messages back to Mythic. 'Connections' is just data about new/closed connections, 'Received Data' is connections plus data sent to the local port Jelly is bound to, 'Sent Data' is the other two plus data that Jelly is sending back to the remote connection.",
                 parameter_group_info=[ParameterGroupInfo(
                     required=False,
                     ui_position=6,
@@ -141,7 +141,7 @@ class RpfwdCommand(CommandBase):
             taskData.args.add_arg("debugLevel", value=3, type=ParameterType.Number)
         await SendMythicRPCResponseCreate(MythicRPCResponseCreateMessage(
             TaskID=taskData.Task.ID,
-            Response=f"Starting server on port {taskData.args.get_arg('port')} where Apollo is running.\nUpdating Sleep to 0\n".encode()
+            Response=f"Starting server on port {taskData.args.get_arg('port')} where Jelly is running.\nUpdating Sleep to 0\n".encode()
         ))
         await SendMythicRPCTaskCreateSubtask(MythicRPCTaskCreateSubtaskMessage(
             TaskID=taskData.Task.ID,

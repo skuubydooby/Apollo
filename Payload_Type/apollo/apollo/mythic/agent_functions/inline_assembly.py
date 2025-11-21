@@ -12,7 +12,7 @@ import asyncio
 import platform
 
 if platform.system() == 'Windows':
-    INTEROP_ASSEMBLY_PATH = "C:\\Mythic\\Apollo\\srv\\Interop.dll"
+    INTEROP_ASSEMBLY_PATH = "C:\\Mythic\\Jelly\\srv\\Interop.dll"
 else:
     INTEROP_ASSEMBLY_PATH = "/srv/Interop.dll"
 INTEROP_FILE_ID = ""

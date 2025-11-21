@@ -1,4 +1,4 @@
-from distutils.dir_util import copy_tree
+﻿from distutils.dir_util import copy_tree
 import shutil
 import tempfile
 from mythic_container.MythicCommandBase import *
@@ -13,7 +13,7 @@ PRINTSPOOFER_FILE_ID = ""
 MIMIKATZ_FILE_ID = ""
 
 if platform.system() == "Windows":
-    EXECUTE_PE_PATH = "C:\\Mythic\\Apollo\\srv\\ExecutePE.exe"
+    EXECUTE_PE_PATH = "C:\\Mythic\\Jelly\\srv\\ExecutePE.exe"
 else:
     EXECUTE_PE_PATH = "/srv/ExecutePE.exe"
 
@@ -164,7 +164,7 @@ class ExecutePECommand(CommandBase):
             self.agent_code_path / "PrintSpoofer_x64.exe"
         )
         if platform.system() == "Windows":
-            shellcode_path = "C:\\Mythic\\Apollo\\temp\\loader.bin"
+            shellcode_path = "C:\\Mythic\\Jelly\\temp\\loader.bin"
         else:
             shellcode_path = "/tmp/loader.bin"
 
@@ -200,7 +200,7 @@ class ExecutePECommand(CommandBase):
         # print(command)
         # need to go through one more step to turn our exe into shellcode
         if platform.system() == "Windows":
-            Currentwd = "C:\\Mythic\\Apollo\\temp\\"
+            Currentwd = "C:\\Mythic\\Jelly\\temp\\"
         else:
             Currentwd = "/tmp"
         proc = await asyncio.create_subprocess_shell(

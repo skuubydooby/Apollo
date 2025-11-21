@@ -1,4 +1,4 @@
-import binascii
+﻿import binascii
 import struct
 from mythic_container.MythicCommandBase import *
 from mythic_container.MythicRPC import *
@@ -7,7 +7,7 @@ from os import path
 import shutil
 
 if platform.system() == 'Windows':
-    RUNOF_HOST_PATH = "C:\\Mythic\\Apollo\\srv\\COFFLoader.dll"
+    RUNOF_HOST_PATH = "C:\\Mythic\\Jelly\\srv\\COFFLoader.dll"
 else:
     RUNOF_HOST_PATH = "/srv/COFFLoader.dll"
 RUNOF_FILE_ID = ""
@@ -185,7 +185,7 @@ class ExecuteCoffCommand(CommandBase):
     async def registered_runof(self, taskData: PTTaskMessageAllData) -> str:
         global RUNOF_HOST_PATH
         if not path.exists(RUNOF_HOST_PATH):
-            shutil.copy(f"apollo/agent_code/COFFLoader.dll", RUNOF_HOST_PATH)
+            shutil.copy(f"Jelly/agent_code/COFFLoader.dll", RUNOF_HOST_PATH)
         fileSearch = await SendMythicRPCFileSearch(MythicRPCFileSearchMessage(
             TaskID=taskData.Task.ID,
             Filename="COFFLoader.dll",
@@ -202,7 +202,7 @@ class ExecuteCoffCommand(CommandBase):
                 Filename="COFFLoader.dll",
                 IsScreenshot=False,
                 IsDownloadFromAgent=False,
-                Comment=f"Shared COFFLoader.dll for all execute_coff tasks within apollo"
+                Comment=f"Shared COFFLoader.dll for all execute_coff tasks within Jelly"
             ))
             if fileRegister.Success:
                 return fileRegister.AgentFileId

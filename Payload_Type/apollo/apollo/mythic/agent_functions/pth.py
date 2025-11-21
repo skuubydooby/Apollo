@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 from mythic_container.MythicRPC import *
 import mslex
 import re
@@ -156,7 +156,7 @@ class PthArguments(TaskArguments):
                         raise ValueError(
                             "Selected credential is not a valid AES128 or AES256 key."
                         )
-                else:   # TODO: Add hash credential type check when Apollo supports tagging
+                else:   # TODO: Add hash credential type check when Jelly supports tagging
                     # credential types in Mimikatz output
                     ntlm_hash = credential["credential"]
                     if not valid_ntlm_hash(ntlm_hash):

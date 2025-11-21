@@ -75,7 +75,7 @@ namespace ExecuteAssembly
                     pipe.BeginWrite(message, 0, message.Length, OnAsyncMessageSent, pipe);
                 }
 
-                // Wait for all messages to be read by Apollo
+                // Wait for all messages to be read by Jelly
                 pipe.WaitForPipeDrain();
                 pipe.Close();
             };
