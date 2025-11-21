@@ -6,8 +6,8 @@
   "exclude_agent_icons": false,
   "payload_types": [
     {
-      "name": "Jelly",
-      "container_name": "Jelly"
+      "name": "jelly",
+      "container_name": "jelly"
     }
   ]
 }
