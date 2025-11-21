@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from uuid import uuid4
 from mythic_container.MythicRPC import *
@@ -14,8 +14,8 @@ class SpawnArguments(TaskArguments):
                 cli_name="Payload",
                 display_name="Payload Template (Shellcode)",
                 type=ParameterType.Payload,
-                supported_agents=["apollo"],
-                supported_agent_build_parameters={"apollo": {"output_type": "Shellcode"}}),
+                supported_agents=["Jelly"],
+                supported_agent_build_parameters={"Jelly": {"output_type": "Shellcode"}}),
         ]
 
     async def parse_arguments(self):

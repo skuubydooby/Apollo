@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
 import sys
@@ -39,7 +39,7 @@ class ticket_store_listCommand(CommandBase):
     description = "List all kerberos tickets in the agents ticket store, optionally a single luid can be provided to limit the items returned from the store"
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_store_list"]
+    supported_ui_features = ["Jelly:ticket_store_list"]
     argument_class = ticket_store_listArguments
     attackmapping = []
     attributes = CommandAttributes(

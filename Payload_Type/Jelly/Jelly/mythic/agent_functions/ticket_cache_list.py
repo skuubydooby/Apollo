@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
 import sys
@@ -52,7 +52,7 @@ class ticket_cache_listCommand(CommandBase):
     description = "List all kerberos tickets in the current logon session, or if elevated list all tickets for all logon sessions, optionally while elevated a single luid can be provided to limit the enumeration"
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_cache_list"]
+    supported_ui_features = ["Jelly:ticket_cache_list"]
     argument_class = ticket_cache_listArguments
     attackmapping = []
     attributes = CommandAttributes(

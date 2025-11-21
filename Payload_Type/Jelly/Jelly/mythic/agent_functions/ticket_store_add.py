@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 from mythic_container.MythicRPC import *
 import base64
 from impacket.krb5.ccache import CCache
@@ -63,7 +63,7 @@ class ticket_store_addCommand(CommandBase):
     description = "Add a kerberos ticket to the agents internal ticket store. Tickets are injected into sacrificial processes when you're impersonating a token (make_token / steal_token). This is because you have a new logon session to put the tickets into without overriding your existing tickets. For safety, do a make_token with junk creds first."
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_store_add"]
+    supported_ui_features = ["Jelly:ticket_store_add"]
     argument_class = ticket_store_addArguments
     attackmapping = []
     attributes = CommandAttributes(

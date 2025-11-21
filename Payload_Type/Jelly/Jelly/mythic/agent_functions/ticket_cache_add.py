@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 from mythic_container.MythicRPC import *
 import base64
 from impacket.krb5.ccache import CCache
@@ -75,7 +75,7 @@ class ticket_cache_addCommand(CommandBase):
     description = "Add a kerberos ticket to the current luid, or if elevated and a luid is provided load the ticket into that logon session instead. This modifies the tickets in the current logon session."
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_cache_add"]
+    supported_ui_features = ["Jelly:ticket_cache_add"]
     argument_class = ticket_cache_addArguments
     attackmapping = []
     attributes = CommandAttributes(

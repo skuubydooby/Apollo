@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
 import sys
@@ -101,7 +101,7 @@ class ticket_cache_extractCommand(CommandBase):
     description = "extract a ticket for the provided service name from the current or specified luid"
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_cache_extract"]
+    supported_ui_features = ["Jelly:ticket_cache_extract"]
     argument_class = ticket_cache_extractArguments
     attackmapping = []
     attributes = CommandAttributes(

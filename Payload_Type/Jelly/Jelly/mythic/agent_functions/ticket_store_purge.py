@@ -1,4 +1,4 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
 import sys
@@ -53,7 +53,7 @@ class ticket_store_purgeCommand(CommandBase):
     description = "Remove the specified ticket from the ticket store"
     version = 2
     author = "@drago-qcc"
-    supported_ui_features = ["apollo:ticket_store_purge"]
+    supported_ui_features = ["Jelly:ticket_store_purge"]
     argument_class = ticket_store_purgeArguments
     attackmapping = []
     attributes = CommandAttributes(

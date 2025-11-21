@@ -1,7 +1,7 @@
-from mythic_container.MythicCommandBase import *
+﻿from mythic_container.MythicCommandBase import *
 import json
 from mythic_container.MythicRPC import *
-from apollo.mythic.agent_functions.register_file import *
+from Jelly.mythic.agent_functions.register_file import *
 import base64
 
 

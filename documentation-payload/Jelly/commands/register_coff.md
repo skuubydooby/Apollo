@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "register_coff"
 chapter = false
 weight = 103
@@ -6,7 +6,7 @@ hidden = false
 +++
 
 ## Summary
-Cache an object file to be used in other post-exploitation jobs. This command is a thin wrapper around the [`register_file`](/agents/apollo/commands/register_file/) command.
+Cache an object file to be used in other post-exploitation jobs. This command is a thin wrapper around the [`register_file`](/agents/Jelly/commands/register_file/) command.
 
 By default, these files are cached in the agent using both AES256 at rest, and decrypted only for task execution.
 
